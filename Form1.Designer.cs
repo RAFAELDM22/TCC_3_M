@@ -40,25 +40,28 @@
             // 
             // txt_usuario
             // 
-            this.txt_usuario.Location = new System.Drawing.Point(357, 95);
+            this.txt_usuario.Location = new System.Drawing.Point(207, 65);
+            this.txt_usuario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_usuario.Name = "txt_usuario";
-            this.txt_usuario.Size = new System.Drawing.Size(129, 22);
+            this.txt_usuario.Size = new System.Drawing.Size(98, 20);
             this.txt_usuario.TabIndex = 0;
             // 
             // txt_senha
             // 
-            this.txt_senha.Location = new System.Drawing.Point(357, 145);
+            this.txt_senha.Location = new System.Drawing.Point(207, 109);
+            this.txt_senha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_senha.Name = "txt_senha";
-            this.txt_senha.Size = new System.Drawing.Size(129, 22);
+            this.txt_senha.Size = new System.Drawing.Size(98, 20);
             this.txt_senha.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(277, 95);
+            this.label1.Location = new System.Drawing.Point(204, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 18);
+            this.label1.Size = new System.Drawing.Size(57, 15);
             this.label1.TabIndex = 2;
             this.label1.Text = "Usuario";
             // 
@@ -66,18 +69,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(290, 145);
+            this.label2.Location = new System.Drawing.Point(204, 92);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 18);
+            this.label2.Size = new System.Drawing.Size(48, 15);
             this.label2.TabIndex = 3;
             this.label2.Text = "Senha";
             // 
             // btn_entrar
             // 
             this.btn_entrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_entrar.Location = new System.Drawing.Point(316, 259);
+            this.btn_entrar.Location = new System.Drawing.Point(176, 209);
+            this.btn_entrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_entrar.Name = "btn_entrar";
-            this.btn_entrar.Size = new System.Drawing.Size(75, 23);
+            this.btn_entrar.Size = new System.Drawing.Size(56, 19);
             this.btn_entrar.TabIndex = 4;
             this.btn_entrar.Text = "Entrar";
             this.btn_entrar.UseVisualStyleBackColor = true;
@@ -85,9 +90,10 @@
             // btn_cadastro
             // 
             this.btn_cadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastro.Location = new System.Drawing.Point(408, 259);
+            this.btn_cadastro.Location = new System.Drawing.Point(236, 209);
+            this.btn_cadastro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cadastro.Name = "btn_cadastro";
-            this.btn_cadastro.Size = new System.Drawing.Size(93, 23);
+            this.btn_cadastro.Size = new System.Drawing.Size(70, 19);
             this.btn_cadastro.TabIndex = 5;
             this.btn_cadastro.Text = "Cadastrar";
             this.btn_cadastro.UseVisualStyleBackColor = true;
@@ -95,26 +101,28 @@
             // 
             // txt_email
             // 
-            this.txt_email.Location = new System.Drawing.Point(357, 197);
+            this.txt_email.Location = new System.Drawing.Point(207, 165);
+            this.txt_email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txt_email.Name = "txt_email";
-            this.txt_email.Size = new System.Drawing.Size(129, 22);
+            this.txt_email.Size = new System.Drawing.Size(98, 20);
             this.txt_email.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(295, 197);
+            this.label3.Location = new System.Drawing.Point(204, 142);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 18);
+            this.label3.Size = new System.Drawing.Size(44, 15);
             this.label3.TabIndex = 7;
             this.label3.Text = "Email";
             // 
             // txt_telaLog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(456, 290);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.btn_cadastro);
@@ -123,6 +131,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.txt_usuario);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "txt_telaLog";
             this.Text = "Login";
             this.ResumeLayout(false);
