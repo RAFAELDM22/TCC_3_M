@@ -1,6 +1,6 @@
 ﻿namespace TCC_3_M
 {
-    partial class Form3
+    partial class txt_telaInicio
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_CadastroP = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_CadastroP
             // 
-            this.button1.Location = new System.Drawing.Point(173, 75);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 81);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Cadastro Produto";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_CadastroP.Location = new System.Drawing.Point(173, 75);
+            this.btn_CadastroP.Name = "btn_CadastroP";
+            this.btn_CadastroP.Size = new System.Drawing.Size(94, 81);
+            this.btn_CadastroP.TabIndex = 0;
+            this.btn_CadastroP.Text = "Cadastro Produto";
+            this.btn_CadastroP.UseVisualStyleBackColor = true;
+            this.btn_CadastroP.Click += new System.EventHandler(this.btn_CadastroP_Click);
             // 
             // button2
             // 
@@ -70,7 +71,7 @@
             this.button4.Text = "Descarte";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // Form3
+            // txt_telaInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,9 +79,9 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form3";
+            this.Controls.Add(this.btn_CadastroP);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "txt_telaInicio";
             this.Text = "Tela Inicial";
             this.ResumeLayout(false);
 
@@ -88,7 +89,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_CadastroP;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;

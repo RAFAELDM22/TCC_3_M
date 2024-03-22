@@ -24,5 +24,11 @@ namespace TCC_3_M
             txt_telaCadastro txt_telaLog = new txt_telaCadastro();
             txt_telaLog.Show();
         }
+
+        private void btn_entrar_Click(object sender, EventArgs e)
+        {
+            txt_telaInicio txt_telaLog = new txt_telaInicio();
+            txt_telaLog.Show();
+        }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TCC_3_M
 {
-    public partial class Form4 : Form
+    public partial class txt_TelaCadastroP : Form
     {
-        public Form4()
+        public txt_TelaCadastroP()
         {
             InitializeComponent();
         }
