@@ -47,28 +47,28 @@ namespace TCC_3_M
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(118, 31);
+            this.textBox1.Location = new System.Drawing.Point(122, 50);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(118, 70);
+            this.textBox2.Location = new System.Drawing.Point(122, 89);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(118, 114);
+            this.textBox3.Location = new System.Drawing.Point(122, 133);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(49, 151);
+            this.button1.Location = new System.Drawing.Point(53, 170);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 3;
@@ -77,7 +77,7 @@ namespace TCC_3_M
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(130, 151);
+            this.button2.Location = new System.Drawing.Point(134, 170);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 4;
@@ -86,7 +86,7 @@ namespace TCC_3_M
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(211, 151);
+            this.button3.Location = new System.Drawing.Point(215, 170);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 5;
@@ -95,28 +95,28 @@ namespace TCC_3_M
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(118, 205);
+            this.textBox4.Location = new System.Drawing.Point(122, 224);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 6;
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(118, 260);
+            this.textBox5.Location = new System.Drawing.Point(122, 279);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 7;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(118, 312);
+            this.textBox6.Location = new System.Drawing.Point(122, 331);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 20);
             this.textBox6.TabIndex = 8;
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(49, 338);
+            this.button4.Location = new System.Drawing.Point(53, 357);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 9;
@@ -125,7 +125,7 @@ namespace TCC_3_M
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(130, 338);
+            this.button5.Location = new System.Drawing.Point(134, 357);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 23);
             this.button5.TabIndex = 10;
@@ -134,7 +134,7 @@ namespace TCC_3_M
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(211, 338);
+            this.button6.Location = new System.Drawing.Point(215, 357);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 11;
@@ -143,7 +143,7 @@ namespace TCC_3_M
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(397, 12);
             this.dataGridView1.Name = "dataGridView1";
@@ -154,6 +154,7 @@ namespace TCC_3_M
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(933, 450);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button6);
