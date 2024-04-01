@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace TCC_3_M
 {
-    public partial class txt_TelaCadastroP : Form
+    public partial class Registro_Dispositivos : Form
     {
-        public txt_TelaCadastroP()
+        public Registro_Dispositivos()
         {
             InitializeComponent();
-        }
-
-        private void btnNew_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

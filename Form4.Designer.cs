@@ -114,6 +114,7 @@ namespace TCC_3_M
             this.btnNew.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnNew.UseVisualStyleBackColor = true;
+            this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
             // btnDelete
             // 
