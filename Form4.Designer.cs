@@ -29,181 +29,246 @@ namespace TCC_3_M
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txt_TelaCadastroP));
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.lblOrderBy = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.cmbOrderBy = new System.Windows.Forms.ComboBox();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.pnlFilter = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.pnlMenu.SuspendLayout();
+            this.pnlFilter.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tabControl1
             // 
-            this.textBox1.Location = new System.Drawing.Point(125, 49);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Location = new System.Drawing.Point(-2, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1007, 494);
+            this.tabControl1.TabIndex = 0;
             // 
-            // textBox2
+            // tabPage1
             // 
-            this.textBox2.Location = new System.Drawing.Point(122, 89);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.pnlMenu);
+            this.tabPage1.Controls.Add(this.pnlFilter);
+            this.tabPage1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(999, 461);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Cadastro de dispositivos";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // tabPage2
             // 
-            this.textBox3.Location = new System.Drawing.Point(122, 133);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(999, 461);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Dispositivos em estoque";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // pnlMenu
             // 
-            this.button1.Location = new System.Drawing.Point(53, 170);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.pnlMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlMenu.Controls.Add(this.btnEdit);
+            this.pnlMenu.Controls.Add(this.btnDelete);
+            this.pnlMenu.Controls.Add(this.btnNew);
+            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlMenu.Location = new System.Drawing.Point(3, 3);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(993, 51);
+            this.pnlMenu.TabIndex = 0;
             // 
-            // button2
+            // btnNew
             // 
-            this.button2.Location = new System.Drawing.Point(134, 170);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnNew.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnNew.FlatAppearance.BorderSize = 0;
+            this.btnNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNew.Image = ((System.Drawing.Image)(resources.GetObject("btnNew.Image")));
+            this.btnNew.Location = new System.Drawing.Point(0, 0);
+            this.btnNew.Name = "btnNew";
+            this.btnNew.Size = new System.Drawing.Size(75, 49);
+            this.btnNew.TabIndex = 0;
+            this.btnNew.Text = "Novo";
+            this.btnNew.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNew.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnNew.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnDelete
             // 
-            this.button3.Location = new System.Drawing.Point(215, 170);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.Location = new System.Drawing.Point(75, 0);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 49);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "Excluir";
+            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // btnEdit
             // 
-            this.textBox4.Location = new System.Drawing.Point(122, 224);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 6;
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Image = global::TCC_3_M.Properties.Resources.edit24x;
+            this.btnEdit.Location = new System.Drawing.Point(150, 0);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 49);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "Editar";
+            this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEdit.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // lblSearch
             // 
-            this.textBox5.Location = new System.Drawing.Point(122, 279);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
-            this.textBox5.TabIndex = 7;
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Location = new System.Drawing.Point(3, 6);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(65, 17);
+            this.lblSearch.TabIndex = 1;
+            this.lblSearch.Text = "Procurar:";
             // 
-            // textBox6
+            // lblStatus
             // 
-            this.textBox6.Location = new System.Drawing.Point(122, 331);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 8;
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Location = new System.Drawing.Point(515, 4);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(50, 17);
+            this.lblStatus.TabIndex = 2;
+            this.lblStatus.Text = "Status:";
             // 
-            // button4
+            // lblOrderBy
             // 
-            this.button4.Location = new System.Drawing.Point(53, 357);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 9;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.lblOrderBy.AutoSize = true;
+            this.lblOrderBy.Location = new System.Drawing.Point(326, 3);
+            this.lblOrderBy.Name = "lblOrderBy";
+            this.lblOrderBy.Size = new System.Drawing.Size(88, 17);
+            this.lblOrderBy.TabIndex = 3;
+            this.lblOrderBy.Text = "Ordenar por:";
             // 
-            // button5
+            // txtSearch
             // 
-            this.button5.Location = new System.Drawing.Point(134, 357);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.Location = new System.Drawing.Point(4, 23);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(278, 18);
+            this.txtSearch.TabIndex = 4;
             // 
-            // button6
+            // cmbOrderBy
             // 
-            this.button6.Location = new System.Drawing.Point(215, 357);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.cmbOrderBy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbOrderBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbOrderBy.FormattingEnabled = true;
+            this.cmbOrderBy.Items.AddRange(new object[] {
+            "Ultima hora",
+            "Hoje",
+            "Esta semana",
+            "Este mês",
+            "Este ano"});
+            this.cmbOrderBy.Location = new System.Drawing.Point(329, 23);
+            this.cmbOrderBy.Name = "cmbOrderBy";
+            this.cmbOrderBy.Size = new System.Drawing.Size(159, 25);
+            this.cmbOrderBy.TabIndex = 5;
+            // 
+            // cmbStatus
+            // 
+            this.cmbStatus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Items.AddRange(new object[] {
+            "Em uso",
+            "Em manutenção",
+            "Em estoque",
+            "Indisponível",
+            "Quebrado"});
+            this.cmbStatus.Location = new System.Drawing.Point(518, 24);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(174, 25);
+            this.cmbStatus.TabIndex = 6;
+            // 
+            // pnlFilter
+            // 
+            this.pnlFilter.BackColor = System.Drawing.Color.Gainsboro;
+            this.pnlFilter.Controls.Add(this.cmbStatus);
+            this.pnlFilter.Controls.Add(this.lblOrderBy);
+            this.pnlFilter.Controls.Add(this.cmbOrderBy);
+            this.pnlFilter.Controls.Add(this.lblStatus);
+            this.pnlFilter.Controls.Add(this.txtSearch);
+            this.pnlFilter.Controls.Add(this.lblSearch);
+            this.pnlFilter.Location = new System.Drawing.Point(0, 50);
+            this.pnlFilter.Name = "pnlFilter";
+            this.pnlFilter.Size = new System.Drawing.Size(999, 52);
+            this.pnlFilter.TabIndex = 7;
             // 
             // dataGridView1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(397, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 104);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(492, 426);
-            this.dataGridView1.TabIndex = 12;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(122, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "label1";
+            this.dataGridView1.Size = new System.Drawing.Size(1005, 330);
+            this.dataGridView1.TabIndex = 8;
             // 
             // txt_TelaCadastroP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(933, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1007, 492);
+            this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "txt_TelaCadastroP";
-            this.Text = "Cadastro De Produtos";
+            this.Text = "Menu - [Cadastro de Dispositivos]";
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.pnlMenu.ResumeLayout(false);
+            this.pnlFilter.ResumeLayout(false);
+            this.pnlFilter.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.Panel pnlMenu;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.ComboBox cmbStatus;
+        private System.Windows.Forms.ComboBox cmbOrderBy;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Label lblOrderBy;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.Panel pnlFilter;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Label label1;
     }
 }
