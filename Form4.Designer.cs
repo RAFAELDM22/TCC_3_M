@@ -32,24 +32,24 @@ namespace TCC_3_M
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txt_TelaCadastroP));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.pnlMenu = new System.Windows.Forms.Panel();
-            this.btnNew = new System.Windows.Forms.Button();
-            this.btnDelete = new System.Windows.Forms.Button();
-            this.btnEdit = new System.Windows.Forms.Button();
-            this.lblSearch = new System.Windows.Forms.Label();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.lblOrderBy = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.cmbOrderBy = new System.Windows.Forms.ComboBox();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
-            this.pnlFilter = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnNew = new System.Windows.Forms.Button();
+            this.pnlFilter = new System.Windows.Forms.Panel();
+            this.cmbStatus = new System.Windows.Forms.ComboBox();
+            this.lblOrderBy = new System.Windows.Forms.Label();
+            this.cmbOrderBy = new System.Windows.Forms.ComboBox();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.lblSearch = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.pnlMenu.SuspendLayout();
             this.pnlFilter.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -78,15 +78,13 @@ namespace TCC_3_M
             this.tabPage1.Text = "Cadastro de dispositivos";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // dataGridView1
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 29);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(999, 461);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Dispositivos em estoque";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 104);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(1005, 330);
+            this.dataGridView1.TabIndex = 8;
             // 
             // pnlMenu
             // 
@@ -99,6 +97,35 @@ namespace TCC_3_M
             this.pnlMenu.Name = "pnlMenu";
             this.pnlMenu.Size = new System.Drawing.Size(993, 51);
             this.pnlMenu.TabIndex = 0;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Image = global::TCC_3_M.Properties.Resources.edit24x;
+            this.btnEdit.Location = new System.Drawing.Point(150, 0);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(75, 49);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.Text = "Editar";
+            this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnEdit.UseVisualStyleBackColor = true;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
+            this.btnDelete.Location = new System.Drawing.Point(75, 0);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 49);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "Excluir";
+            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnDelete.UseVisualStyleBackColor = true;
             // 
             // btnNew
             // 
@@ -116,102 +143,6 @@ namespace TCC_3_M
             this.btnNew.UseVisualStyleBackColor = true;
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // btnDelete
-            // 
-            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnDelete.FlatAppearance.BorderSize = 0;
-            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(75, 0);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 49);
-            this.btnDelete.TabIndex = 1;
-            this.btnDelete.Text = "Excluir";
-            this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnDelete.UseVisualStyleBackColor = true;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnEdit.FlatAppearance.BorderSize = 0;
-            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Image = global::TCC_3_M.Properties.Resources.edit24x;
-            this.btnEdit.Location = new System.Drawing.Point(150, 0);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(75, 49);
-            this.btnEdit.TabIndex = 2;
-            this.btnEdit.Text = "Editar";
-            this.btnEdit.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnEdit.UseVisualStyleBackColor = true;
-            // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Location = new System.Drawing.Point(3, 6);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(65, 17);
-            this.lblSearch.TabIndex = 1;
-            this.lblSearch.Text = "Procurar:";
-            // 
-            // lblStatus
-            // 
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(515, 4);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(50, 17);
-            this.lblStatus.TabIndex = 2;
-            this.lblStatus.Text = "Status:";
-            // 
-            // lblOrderBy
-            // 
-            this.lblOrderBy.AutoSize = true;
-            this.lblOrderBy.Location = new System.Drawing.Point(326, 3);
-            this.lblOrderBy.Name = "lblOrderBy";
-            this.lblOrderBy.Size = new System.Drawing.Size(88, 17);
-            this.lblOrderBy.TabIndex = 3;
-            this.lblOrderBy.Text = "Ordenar por:";
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSearch.Location = new System.Drawing.Point(4, 23);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(278, 18);
-            this.txtSearch.TabIndex = 4;
-            // 
-            // cmbOrderBy
-            // 
-            this.cmbOrderBy.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbOrderBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbOrderBy.FormattingEnabled = true;
-            this.cmbOrderBy.Items.AddRange(new object[] {
-            "Ultima hora",
-            "Hoje",
-            "Esta semana",
-            "Este mês",
-            "Este ano"});
-            this.cmbOrderBy.Location = new System.Drawing.Point(329, 23);
-            this.cmbOrderBy.Name = "cmbOrderBy";
-            this.cmbOrderBy.Size = new System.Drawing.Size(159, 25);
-            this.cmbOrderBy.TabIndex = 5;
-            // 
-            // cmbStatus
-            // 
-            this.cmbStatus.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Items.AddRange(new object[] {
-            "Em uso",
-            "Em manutenção",
-            "Em estoque",
-            "Indisponível",
-            "Quebrado"});
-            this.cmbStatus.Location = new System.Drawing.Point(518, 24);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(174, 25);
-            this.cmbStatus.TabIndex = 6;
-            // 
             // pnlFilter
             // 
             this.pnlFilter.BackColor = System.Drawing.Color.Gainsboro;
@@ -226,13 +157,87 @@ namespace TCC_3_M
             this.pnlFilter.Size = new System.Drawing.Size(999, 52);
             this.pnlFilter.TabIndex = 7;
             // 
-            // dataGridView1
+            // cmbStatus
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 104);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1005, 330);
-            this.dataGridView1.TabIndex = 8;
+            this.cmbStatus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbStatus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbStatus.FormattingEnabled = true;
+            this.cmbStatus.Items.AddRange(new object[] {
+            "Em uso",
+            "Em manutenção",
+            "Em estoque",
+            "Indisponível",
+            "Quebrado"});
+            this.cmbStatus.Location = new System.Drawing.Point(518, 24);
+            this.cmbStatus.Name = "cmbStatus";
+            this.cmbStatus.Size = new System.Drawing.Size(174, 25);
+            this.cmbStatus.TabIndex = 6;
+            // 
+            // lblOrderBy
+            // 
+            this.lblOrderBy.AutoSize = true;
+            this.lblOrderBy.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrderBy.Location = new System.Drawing.Point(326, 3);
+            this.lblOrderBy.Name = "lblOrderBy";
+            this.lblOrderBy.Size = new System.Drawing.Size(85, 17);
+            this.lblOrderBy.TabIndex = 3;
+            this.lblOrderBy.Text = "Ordenar por:";
+            // 
+            // cmbOrderBy
+            // 
+            this.cmbOrderBy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbOrderBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbOrderBy.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbOrderBy.FormattingEnabled = true;
+            this.cmbOrderBy.Items.AddRange(new object[] {
+            "Ultima hora",
+            "Hoje",
+            "Esta semana",
+            "Este mês",
+            "Este ano"});
+            this.cmbOrderBy.Location = new System.Drawing.Point(329, 23);
+            this.cmbOrderBy.Name = "cmbOrderBy";
+            this.cmbOrderBy.Size = new System.Drawing.Size(159, 25);
+            this.cmbOrderBy.TabIndex = 5;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(515, 4);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(46, 17);
+            this.lblStatus.TabIndex = 2;
+            this.lblStatus.Text = "Status:";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSearch.Location = new System.Drawing.Point(4, 23);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(278, 18);
+            this.txtSearch.TabIndex = 4;
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSearch.Location = new System.Drawing.Point(3, 6);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(61, 17);
+            this.lblSearch.TabIndex = 1;
+            this.lblSearch.Text = "Procurar:";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(999, 461);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Dispositivos em estoque";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // txt_TelaCadastroP
             // 
@@ -246,10 +251,10 @@ namespace TCC_3_M
             this.Text = "Menu - [Cadastro de Dispositivos]";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.pnlMenu.ResumeLayout(false);
             this.pnlFilter.ResumeLayout(false);
             this.pnlFilter.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -19,7 +19,8 @@ namespace TCC_3_M
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-
+            Registro_Dispositivos txt_TelaCadastroP = new Registro_Dispositivos();
+            txt_TelaCadastroP.Show();
         }
     }
 }
