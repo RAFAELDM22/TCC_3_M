@@ -1,6 +1,6 @@
 ﻿namespace TCC_3_M
 {
-    partial class txt_telaLog
+    partial class telaLogin
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -122,7 +122,7 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Email:";
             // 
-            // txt_telaLog
+            // telaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -138,7 +138,7 @@
             this.Controls.Add(this.txt_usuario);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "txt_telaLog";
+            this.Name = "telaLogin";
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -1,6 +1,6 @@
 ﻿namespace TCC_3_M
 {
-    partial class txt_telaCadastro
+    partial class telaCadastro
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             // txt_user
             // 
             this.txt_user.Location = new System.Drawing.Point(246, 98);
-            this.txt_user.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_user.Margin = new System.Windows.Forms.Padding(2);
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(117, 20);
             this.txt_user.TabIndex = 0;
@@ -49,7 +49,7 @@
             // txt_password
             // 
             this.txt_password.Location = new System.Drawing.Point(246, 149);
-            this.txt_password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_password.Margin = new System.Windows.Forms.Padding(2);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(117, 20);
             this.txt_password.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             this.btn_salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_salvar.Location = new System.Drawing.Point(245, 223);
-            this.btn_salvar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_salvar.Margin = new System.Windows.Forms.Padding(2);
             this.btn_salvar.Name = "btn_salvar";
             this.btn_salvar.Size = new System.Drawing.Size(56, 19);
             this.btn_salvar.TabIndex = 2;
@@ -68,7 +68,7 @@
             // txt_Email
             // 
             this.txt_Email.Location = new System.Drawing.Point(246, 191);
-            this.txt_Email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Email.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Email.Name = "txt_Email";
             this.txt_Email.Size = new System.Drawing.Size(117, 20);
             this.txt_Email.TabIndex = 3;
@@ -110,7 +110,7 @@
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(306, 223);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 7;
@@ -118,7 +118,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // txt_telaCadastro
+            // telaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -131,8 +131,8 @@
             this.Controls.Add(this.btn_salvar);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_user);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "txt_telaCadastro";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "telaCadastro";
             this.Text = "Novo Cadastro";
             this.ResumeLayout(false);
             this.PerformLayout();

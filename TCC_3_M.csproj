@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="excluirDispositivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="excluirDispositivo.Designer.cs">
+      <DependentUpon>excluirDispositivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Registro_Dispositivos.Designer.cs">
       <DependentUpon>Registro_Dispositivos.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="excluirDispositivo.resx">
+      <DependentUpon>excluirDispositivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

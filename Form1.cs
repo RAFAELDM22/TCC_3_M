@@ -10,19 +10,19 @@ using System.Windows.Forms;
 
 namespace TCC_3_M
 {
-    public partial class txt_telaLog : Form
+    public partial class telaLogin : Form
     {
-        private txt_telaCadastro txt_telaLogin;
+        private telaCadastro txt_telaLogin;
 
-        public txt_telaLog()
+        public telaLogin()
         {
             InitializeComponent();
         }
 
         private void btn_cadastro_Click(object sender, EventArgs e)
         {
-            txt_telaCadastro txt_telaLog = new txt_telaCadastro();
-            txt_telaLog.Show();
+            telaCadastro telaLogin = new telaCadastro();
+            telaLogin.Show();
         }
 
         private void btn_entrar_Click(object sender, EventArgs e)

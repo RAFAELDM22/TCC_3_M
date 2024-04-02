@@ -198,12 +198,6 @@
             // 
             this.cmbDeviceType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbDeviceType.FormattingEnabled = true;
-            this.cmbDeviceType.Items.AddRange(new object[] {
-            "Notebook",
-            "Monitor",
-            "Teclado",
-            "Mouse",
-            "Caixas de som"});
             this.cmbDeviceType.Location = new System.Drawing.Point(324, 231);
             this.cmbDeviceType.Name = "cmbDeviceType";
             this.cmbDeviceType.Size = new System.Drawing.Size(121, 21);

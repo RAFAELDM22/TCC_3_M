@@ -16,7 +16,7 @@ namespace TCC_3_M
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new txt_telaLog());
+            Application.Run(new telaLogin());
         }
     }
 }
