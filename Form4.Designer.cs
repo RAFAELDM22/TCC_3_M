@@ -248,7 +248,7 @@ namespace TCC_3_M
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "txt_TelaCadastroP";
-            this.Text = "Menu - [Cadastro de Dispositivos]";
+            this.Text = "Menu - Cadastro de Dispositivos";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
