@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TCC_3_M
 {
-    public partial class Registro_Dispositivos : Form
+    public partial class registroDispositivos : Form
     {
-        public Registro_Dispositivos()
+        public registroDispositivos()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace TCC_3_M
 {
-    partial class telaCadastro
+    partial class cadastroAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -118,7 +118,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // telaCadastro
+            // cadastroAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -132,7 +132,7 @@
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_user);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "telaCadastro";
+            this.Name = "cadastroAdmin";
             this.Text = "Novo Cadastro";
             this.ResumeLayout(false);
             this.PerformLayout();

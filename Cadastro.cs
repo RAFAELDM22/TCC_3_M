@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace TCC_3_M
 {
-    public partial class txt_TelaCadastroP : Form
+    public partial class cadastroAdmin : Form
     {
-        public txt_TelaCadastroP()
+        public cadastroAdmin()
         {
             InitializeComponent();
         }
 
-        private void btnNew_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            Registro_Dispositivos txt_TelaCadastroP = new Registro_Dispositivos();
-            txt_TelaCadastroP.Show();
+            login telaCadastro = new login();
+            telaCadastro.Show();
         }
     }
 }

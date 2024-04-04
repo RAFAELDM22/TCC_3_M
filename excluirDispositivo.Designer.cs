@@ -33,9 +33,6 @@ namespace TCC_3_M
             this.txtTag = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.cmbStatus = new System.Windows.Forms.ComboBox();
             this.cmbDeviceType = new System.Windows.Forms.ComboBox();
             this.lblDeviceType = new System.Windows.Forms.Label();
@@ -47,19 +44,28 @@ namespace TCC_3_M
             this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblFilter = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // txtTag
             // 
             this.txtTag.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTag.Location = new System.Drawing.Point(333, 201);
+            this.txtTag.Location = new System.Drawing.Point(146, 100);
             this.txtTag.Multiline = true;
             this.txtTag.Name = "txtTag";
             this.txtTag.Size = new System.Drawing.Size(121, 20);
@@ -68,10 +74,10 @@ namespace TCC_3_M
             // btnSave
             // 
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Location = new System.Drawing.Point(474, 399);
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Location = new System.Drawing.Point(534, 415);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(77, 32);
+            this.btnSave.Size = new System.Drawing.Size(50, 23);
             this.btnSave.TabIndex = 58;
             this.btnSave.Text = "Salvar";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -80,40 +86,13 @@ namespace TCC_3_M
             // 
             this.btnCancel.BackColor = System.Drawing.Color.MistyRose;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.Location = new System.Drawing.Point(381, 399);
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Location = new System.Drawing.Point(442, 415);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(78, 32);
+            this.btnCancel.Size = new System.Drawing.Size(70, 23);
             this.btnCancel.TabIndex = 57;
             this.btnCancel.Text = "Cancelar";
             this.btnCancel.UseVisualStyleBackColor = false;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Location = new System.Drawing.Point(333, 153);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(121, 20);
-            this.textBox4.TabIndex = 50;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(26, 201);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(284, 20);
-            this.textBox3.TabIndex = 49;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Location = new System.Drawing.Point(26, 153);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(284, 20);
-            this.textBox2.TabIndex = 48;
             // 
             // cmbStatus
             // 
@@ -126,7 +105,7 @@ namespace TCC_3_M
             "Em conserto",
             "Indisponível",
             "Para descarte"});
-            this.cmbStatus.Location = new System.Drawing.Point(474, 153);
+            this.cmbStatus.Location = new System.Drawing.Point(453, 204);
             this.cmbStatus.Name = "cmbStatus";
             this.cmbStatus.Size = new System.Drawing.Size(121, 21);
             this.cmbStatus.TabIndex = 47;
@@ -135,7 +114,7 @@ namespace TCC_3_M
             // 
             this.cmbDeviceType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cmbDeviceType.FormattingEnabled = true;
-            this.cmbDeviceType.Location = new System.Drawing.Point(474, 198);
+            this.cmbDeviceType.Location = new System.Drawing.Point(299, 204);
             this.cmbDeviceType.Name = "cmbDeviceType";
             this.cmbDeviceType.Size = new System.Drawing.Size(121, 21);
             this.cmbDeviceType.TabIndex = 46;
@@ -144,7 +123,7 @@ namespace TCC_3_M
             // 
             this.lblDeviceType.AutoSize = true;
             this.lblDeviceType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDeviceType.Location = new System.Drawing.Point(471, 183);
+            this.lblDeviceType.Location = new System.Drawing.Point(296, 186);
             this.lblDeviceType.Name = "lblDeviceType";
             this.lblDeviceType.Size = new System.Drawing.Size(113, 15);
             this.lblDeviceType.TabIndex = 45;
@@ -154,7 +133,7 @@ namespace TCC_3_M
             // 
             this.lblStatus.AutoSize = true;
             this.lblStatus.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStatus.Location = new System.Drawing.Point(471, 135);
+            this.lblStatus.Location = new System.Drawing.Point(450, 186);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(45, 15);
             this.lblStatus.TabIndex = 44;
@@ -164,7 +143,7 @@ namespace TCC_3_M
             // 
             this.lblTag.AutoSize = true;
             this.lblTag.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTag.Location = new System.Drawing.Point(330, 183);
+            this.lblTag.Location = new System.Drawing.Point(143, 82);
             this.lblTag.Name = "lblTag";
             this.lblTag.Size = new System.Drawing.Size(31, 15);
             this.lblTag.TabIndex = 37;
@@ -174,7 +153,7 @@ namespace TCC_3_M
             // 
             this.lblLatitude.AutoSize = true;
             this.lblLatitude.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLatitude.Location = new System.Drawing.Point(330, 135);
+            this.lblLatitude.Location = new System.Drawing.Point(13, 82);
             this.lblLatitude.Name = "lblLatitude";
             this.lblLatitude.Size = new System.Drawing.Size(56, 15);
             this.lblLatitude.TabIndex = 35;
@@ -184,7 +163,7 @@ namespace TCC_3_M
             // 
             this.lblModel.AutoSize = true;
             this.lblModel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblModel.Location = new System.Drawing.Point(23, 183);
+            this.lblModel.Location = new System.Drawing.Point(152, 186);
             this.lblModel.Name = "lblModel";
             this.lblModel.Size = new System.Drawing.Size(54, 15);
             this.lblModel.TabIndex = 34;
@@ -194,7 +173,7 @@ namespace TCC_3_M
             // 
             this.lblBrand.AutoSize = true;
             this.lblBrand.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBrand.Location = new System.Drawing.Point(23, 135);
+            this.lblBrand.Location = new System.Drawing.Point(13, 186);
             this.lblBrand.Name = "lblBrand";
             this.lblBrand.Size = new System.Drawing.Size(46, 15);
             this.lblBrand.TabIndex = 33;
@@ -205,9 +184,9 @@ namespace TCC_3_M
             this.lblSearch.AutoSize = true;
             this.lblSearch.Location = new System.Drawing.Point(140, 43);
             this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(97, 13);
+            this.lblSearch.Size = new System.Drawing.Size(113, 13);
             this.lblSearch.TabIndex = 60;
-            this.lblSearch.Text = "Pesquisar Modelo :";
+            this.lblSearch.Text = "Pesquisar Dispositivo :";
             // 
             // txtSearch
             // 
@@ -224,19 +203,8 @@ namespace TCC_3_M
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(625, 40);
+            this.panel1.Size = new System.Drawing.Size(623, 40);
             this.panel1.TabIndex = 62;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(69, 40);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -249,6 +217,17 @@ namespace TCC_3_M
             this.label1.Size = new System.Drawing.Size(103, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Pesquisar";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -269,17 +248,95 @@ namespace TCC_3_M
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.lblFilter);
+            this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.panel2.Location = new System.Drawing.Point(0, 84);
+            this.panel2.Location = new System.Drawing.Point(0, 135);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(625, 48);
             this.panel2.TabIndex = 65;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(69, 48);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // lblFilter
+            // 
+            this.lblFilter.AutoSize = true;
+            this.lblFilter.BackColor = System.Drawing.Color.Silver;
+            this.lblFilter.Font = new System.Drawing.Font("Microsoft YaHei UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFilter.ForeColor = System.Drawing.Color.White;
+            this.lblFilter.Location = new System.Drawing.Point(67, 13);
+            this.lblFilter.Name = "lblFilter";
+            this.lblFilter.Size = new System.Drawing.Size(70, 26);
+            this.lblFilter.TabIndex = 2;
+            this.lblFilter.Text = "Filtrar";
+            // 
+            // textBox4
+            // 
+            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox4.Location = new System.Drawing.Point(16, 100);
+            this.textBox4.Multiline = true;
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(121, 20);
+            this.textBox4.TabIndex = 66;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Em uso",
+            "Em estoque",
+            "Em manutenção",
+            "Em conserto",
+            "Indisponível",
+            "Para descarte"});
+            this.comboBox1.Location = new System.Drawing.Point(155, 204);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 67;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Em uso",
+            "Em estoque",
+            "Em manutenção",
+            "Em conserto",
+            "Indisponível",
+            "Para descarte"});
+            this.comboBox2.Location = new System.Drawing.Point(16, 204);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 68;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 243);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(623, 166);
+            this.dataGridView1.TabIndex = 69;
             // 
             // excluirDispositivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(625, 450);
+            this.ClientSize = new System.Drawing.Size(623, 441);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtSearch);
@@ -287,9 +344,6 @@ namespace TCC_3_M
             this.Controls.Add(this.txtTag);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.cmbStatus);
             this.Controls.Add(this.cmbDeviceType);
             this.Controls.Add(this.lblDeviceType);
@@ -306,6 +360,10 @@ namespace TCC_3_M
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -315,9 +373,6 @@ namespace TCC_3_M
         private System.Windows.Forms.TextBox txtTag;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.ComboBox cmbStatus;
         private System.Windows.Forms.ComboBox cmbDeviceType;
         private System.Windows.Forms.Label lblDeviceType;
@@ -334,5 +389,11 @@ namespace TCC_3_M
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblFilter;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

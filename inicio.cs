@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace TCC_3_M
 {
-    public partial class telaCadastro : Form
+    public partial class inicio : Form
     {
-        public telaCadastro()
+        public inicio()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnCadastrarDispositivo_Click(object sender, EventArgs e)
         {
-            telaLogin telaCadastro = new telaLogin();
-            telaCadastro.Show();
+            registroDispositivos inicio = new registroDispositivos();
+            inicio.Show();
         }
     }
 }

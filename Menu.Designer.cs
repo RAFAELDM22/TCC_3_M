@@ -1,7 +1,7 @@
 ﻿
 namespace TCC_3_M
 {
-    partial class txt_TelaCadastroP
+    partial class telaCadastroAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace TCC_3_M
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(txt_TelaCadastroP));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaCadastroAdmin));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -126,6 +126,7 @@ namespace TCC_3_M
             this.btnDelete.Text = "Excluir";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnNew
             // 
@@ -239,7 +240,7 @@ namespace TCC_3_M
             this.tabPage2.Text = "Dispositivos em estoque";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // txt_TelaCadastroP
+            // telaMenus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -247,7 +248,7 @@ namespace TCC_3_M
             this.ClientSize = new System.Drawing.Size(1007, 492);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "txt_TelaCadastroP";
+            this.Name = "telaMenus";
             this.Text = "Menu - [Cadastro de Dispositivos]";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

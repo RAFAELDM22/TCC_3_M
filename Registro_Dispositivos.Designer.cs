@@ -1,6 +1,6 @@
 ﻿namespace TCC_3_M
 {
-    partial class Registro_Dispositivos
+    partial class registroDispositivos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_Dispositivos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registroDispositivos));
             this.lblBrand = new System.Windows.Forms.Label();
             this.lblModel = new System.Windows.Forms.Label();
             this.lblLatitude = new System.Windows.Forms.Label();
@@ -54,8 +54,8 @@
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.txtObservations = new System.Windows.Forms.TextBox();
             this.pnlCadastroP = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.txtTag = new System.Windows.Forms.TextBox();
@@ -311,17 +311,6 @@
             this.pnlCadastroP.Size = new System.Drawing.Size(493, 41);
             this.pnlCadastroP.TabIndex = 28;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -332,6 +321,17 @@
             this.label1.Size = new System.Drawing.Size(249, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Cadastro de Dispositivos";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // btnCancel
             // 
@@ -372,7 +372,7 @@
             this.txtGuarantee.Size = new System.Drawing.Size(121, 20);
             this.txtGuarantee.TabIndex = 32;
             // 
-            // Registro_Dispositivos
+            // registroDispositivos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -407,7 +407,7 @@
             this.Controls.Add(this.lblBrand);
             this.Controls.Add(this.pnlCadastroP);
             this.Cursor = System.Windows.Forms.Cursors.Default;
-            this.Name = "Registro_Dispositivos";
+            this.Name = "registroDispositivos";
             this.Text = "Cadastro de produto";
             this.pnlCadastroP.ResumeLayout(false);
             this.pnlCadastroP.PerformLayout();

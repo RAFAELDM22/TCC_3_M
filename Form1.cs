@@ -10,25 +10,25 @@ using System.Windows.Forms;
 
 namespace TCC_3_M
 {
-    public partial class telaLogin : Form
+    public partial class login : Form
     {
-        private telaCadastro txt_telaLogin;
+        private cadastroAdmin txt_telaLogin;
 
-        public telaLogin()
+        public login()
         {
             InitializeComponent();
         }
 
         private void btn_cadastro_Click(object sender, EventArgs e)
         {
-            telaCadastro telaLogin = new telaCadastro();
-            telaLogin.Show();
+            cadastroAdmin login = new cadastroAdmin();
+            login.Show();
         }
 
         private void btn_entrar_Click(object sender, EventArgs e)
         {
-            txt_telaInicio txt_telaLog = new txt_telaInicio();
-            txt_telaLog.Show();
+            inicio login = new inicio();
+            login.Show();
         }
     }
 }
