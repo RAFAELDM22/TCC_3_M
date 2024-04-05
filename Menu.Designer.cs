@@ -248,8 +248,13 @@ namespace TCC_3_M
             this.ClientSize = new System.Drawing.Size(1007, 492);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD:Menu.Designer.cs
             this.Name = "telaMenus";
             this.Text = "Menu - [Cadastro de Dispositivos]";
+=======
+            this.Name = "txt_TelaCadastroP";
+            this.Text = "Menu - Cadastro de Dispositivos";
+>>>>>>> 71c94d3a21c96acb0a62a7d1809b27d2e0a2a22c:Form4.Designer.cs
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
