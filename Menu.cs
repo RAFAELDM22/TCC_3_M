@@ -26,8 +26,8 @@ namespace TCC_3_M
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            excluirDispositivo telaMenuCadastro = new excluirDispositivo();
-            telaMenuCadastro.Show();
+            excluirDispositivo telaMenuCadastroP = new excluirDispositivo();
+            telaMenuCadastroP.Show();
            
         }
     }

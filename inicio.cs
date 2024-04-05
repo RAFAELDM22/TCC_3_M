@@ -22,5 +22,11 @@ namespace TCC_3_M
             registroDispositivos inicio = new registroDispositivos();
             inicio.Show();
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            excluirDispositivo inicio = new excluirDispositivo();
+            inicio.Show();
+        }
     }
 }
