@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace TCC_3_M
 {
-    public partial class telaCadastroAdmin : Form
+    public partial class telaMenuCadastroP : Form
     {
 
-        public telaCadastroAdmin()
+        public telaMenuCadastroP()
         {
             InitializeComponent();
         }

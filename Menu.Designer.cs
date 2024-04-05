@@ -1,7 +1,7 @@
 ﻿
 namespace TCC_3_M
 {
-    partial class telaCadastroAdmin
+    partial class telaMenuCadastroP
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace TCC_3_M
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaCadastroAdmin));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(telaMenuCadastroP));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -240,7 +240,7 @@ namespace TCC_3_M
             this.tabPage2.Text = "Dispositivos em estoque";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // telaMenus
+            // telaMenuCadastroP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -248,13 +248,8 @@ namespace TCC_3_M
             this.ClientSize = new System.Drawing.Size(1007, 492);
             this.Controls.Add(this.tabControl1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD:Menu.Designer.cs
-            this.Name = "telaMenus";
+            this.Name = "telaMenuCadastroP";
             this.Text = "Menu - [Cadastro de Dispositivos]";
-=======
-            this.Name = "txt_TelaCadastroP";
-            this.Text = "Menu - Cadastro de Dispositivos";
->>>>>>> 71c94d3a21c96acb0a62a7d1809b27d2e0a2a22c:Form4.Designer.cs
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
