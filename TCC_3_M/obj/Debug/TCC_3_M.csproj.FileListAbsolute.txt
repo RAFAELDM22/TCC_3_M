@@ -1,0 +1,15 @@
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\bin\Debug\TCC_3_M.exe.config
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\bin\Debug\TCC_3_M.exe
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\bin\Debug\TCC_3_M.pdb
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.csproj.AssemblyReference.cache
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.Properties.Resources.resources
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.csproj.GenerateResource.cache
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.exe
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.pdb
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.excluirDispositivo.resources
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.login.resources
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.cadastroAdmin.resources
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.inicio.resources
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.telaMenuCadastroP.resources
+C:\Users\aluno\Documents\3 modulo_DS\TCC_3_M\obj\Debug\TCC_3_M.registroDispositivos.resources
